@@ -14,8 +14,8 @@ M109 S[first_layer_temperature] ; Heat and wait for extruder to reach print temp
 G1 Z0.2 F720
 G1 Y-3 F1000 ; go outside print area
 G92 E0
-G1 X60 E9 F1000 ; intro line
-G1 X100 E12.5 F1000 ; intro line
+G1 X120 E18 F1000 ; intro line
+G1 X180 E12.5 F1000 ; intro line
 G92 E0
 M221 S{if layer_height<0.075}100{else}95{endif}
 
