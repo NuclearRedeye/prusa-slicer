@@ -1,5 +1,5 @@
 G4 ; wait
-G1 E-10 ; Retract filament by 10mm to avoid ooze during hot end cool down
+G1 E-10 ; Retract filament by 10mm to avoid oozing during cool down
 G4 ; wait for retraction to finish
 M221 S100 ; reset flow
 M900 K0 ; reset LA
