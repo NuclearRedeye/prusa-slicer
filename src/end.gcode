@@ -1,4 +1,6 @@
 G4 ; wait
+G1 E-10 ; Retract filament by 10mm to avoid ooze during hot end cool down
+G4 ; wait for retraction to finish
 M221 S100 ; reset flow
 M900 K0 ; reset LA
 {if print_settings_id=~/.*(DETAIL @MK3|QUALITY @MK3|@0.25 nozzle MK3).*/}M907 E538 ; reset extruder motor current{endif}
